@@ -1,0 +1,4 @@
+# Scripts temporários de análise e processamento
+*.ps1
+page_contents.txt
+decompressed_vector.txt
