@@ -277,11 +277,18 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- SEÇÃO DE LOCAIS DE ATENDIMENTO (Harmonizada com o design system do vetor) -->
+    <!-- SEÇÃO DE LOCAIS DE ATENDIMENTO COM BACKGROUND ISOMÉTRICO 3D -->
     <!-- ========================================================================= -->
-    <section class="py-12 sm:py-16 px-6 sm:px-12 lg:px-16 bg-[#F8FAFC] border-t border-slate-100" id="locais">
+    <section class="relative py-12 sm:py-16 px-6 sm:px-12 lg:px-16 overflow-hidden border-t border-slate-200" id="locais">
       
-      <!-- Cabeçalho -->
+      <!-- Imagem de fundo 3D isométrica de hospital/clínica com ambulâncias e pin de localização -->
+      <div class="absolute inset-0 bg-cover bg-center bg-no-repeat pointer-events-none" style="background-image: url('bg_unidades.jpg');"></div>
+      
+      <!-- Overlay claro e suave com leve blur para garantir legibilidade impecável dos textos e cards -->
+      <div class="absolute inset-0 bg-white/85 sm:bg-white/80 backdrop-blur-[2px] pointer-events-none"></div>
+
+      <div class="relative z-10">
+        <!-- Cabeçalho -->
       <div class="max-w-2xl mb-10">
         <span class="font-poppins text-[10px] font-bold tracking-[0.2em] text-vectorBlue uppercase block mb-1">UNIDADES DE ATENDIMENTO</span>
         <h2 class="font-poppins text-xl sm:text-2xl font-bold text-templateHeading tracking-tight">ONDE O DR. EDMAR MESQUITA ATENDE</h2>
@@ -294,7 +301,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
         
         <!-- CARD 1: CONSULTÓRIO (CENTRO DE SAÚDE SÃO CAMILO) -->
-        <div id="consultorio" class="bg-white rounded-xl p-6 sm:p-7 card-clean-white flex flex-col justify-between shadow-2xs">
+        <div id="consultorio" class="bg-white/95 backdrop-blur-md rounded-xl p-6 sm:p-7 card-clean-white flex flex-col justify-between shadow-md border border-white/70">
           <div>
             <div class="flex items-center justify-between mb-3">
               <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-blue-50 text-vectorBlue font-poppins text-[10px] font-bold tracking-wider uppercase">
@@ -371,7 +378,7 @@
         </div>
 
         <!-- CARD 2: ATENDIMENTO HOSPITALAR (HOSPITAL SÃO CAMILO) -->
-        <div id="hospital" class="bg-white rounded-xl p-6 sm:p-7 card-clean-white flex flex-col justify-between shadow-2xs">
+        <div id="hospital" class="bg-white/95 backdrop-blur-md rounded-xl p-6 sm:p-7 card-clean-white flex flex-col justify-between shadow-md border border-white/70">
           <div>
             <div class="flex items-center justify-between mb-3">
               <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-cyan-50 text-cyan-800 font-poppins text-[10px] font-bold tracking-wider uppercase">
@@ -431,6 +438,8 @@
             </a>
           </div>
         </div>
+
+      </div>
 
       </div>
 
