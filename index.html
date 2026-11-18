@@ -437,53 +437,53 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- SEÇÃO DE CONTATO PRINCIPAL COM BACKGROUND DOS PAPÉIS DE CONTATO -->
+    <!-- SEÇÃO DE CONTATO PRINCIPAL COM BACKGROUND 3D METALIZADO -->
     <!-- ========================================================================= -->
-    <section id="contato" class="relative py-14 sm:py-20 px-6 sm:px-12 lg:px-16 border-t border-slate-100 text-center overflow-hidden bg-white">
+    <section id="contato" class="relative py-16 sm:py-24 px-6 sm:px-12 lg:px-16 text-center overflow-hidden bg-slate-950">
       
-      <!-- Imagem de fundo com os papéis de contato e tachinhas azuis -->
-      <div class="absolute inset-0 bg-no-repeat bg-center bg-contain opacity-40 sm:opacity-50 pointer-events-none" style="background-image: url('bg_contato.jpg');"></div>
+      <!-- Imagem de fundo 3D com símbolos de contato iluminados em azul e roxo -->
+      <div class="absolute inset-0 bg-cover bg-center bg-no-repeat pointer-events-none" style="background-image: url('bg_contato.jpg');"></div>
       
-      <!-- Overlay suave para garantir leitura limpa dos textos -->
-      <div class="absolute inset-0 bg-white/60 pointer-events-none"></div>
+      <!-- Overlay translúcido suave para destacar os ícones e garantir contraste perfeito -->
+      <div class="absolute inset-0 bg-gradient-to-b from-slate-950/40 via-slate-900/50 to-slate-950/60 backdrop-blur-[1px] pointer-events-none"></div>
 
       <div class="relative z-10 max-w-xl mx-auto">
         
-        <span class="font-poppins text-[10px] font-bold tracking-[0.2em] text-vectorBlue uppercase block mb-1.5">
+        <span class="font-poppins text-[10px] font-bold tracking-[0.2em] text-cyan-300 uppercase block mb-2 drop-shadow-sm">
           CANAL DE CONTATO DIRETO
         </span>
 
-        <h2 class="font-poppins text-xl sm:text-2xl font-bold text-templateHeading tracking-tight mb-2">
+        <h2 class="font-poppins text-2xl sm:text-3xl font-bold text-white tracking-tight mb-2.5 drop-shadow-md">
           Fale com o Dr. Edmar Mesquita
         </h2>
 
-        <p class="text-xs sm:text-[13px] text-templateText mb-6 max-w-md mx-auto leading-relaxed">
+        <p class="text-xs sm:text-[13px] text-slate-200 mb-7 max-w-md mx-auto leading-relaxed drop-shadow-sm font-sans">
           Para dúvidas, agendamentos e orientações de atendimento no Crato, entre em contato pelo canal principal.
         </p>
 
-        <!-- Número em Destaque Leve e Limpo -->
-        <div class="mb-6">
-          <a href="tel:+5588999991789" class="inline-flex items-center gap-2.5 font-poppins text-2xl sm:text-3xl font-bold text-slate-800 hover:text-vectorBlue transition-colors group bg-white/80 backdrop-blur-xs px-5 py-2 rounded-full border border-slate-200/60 shadow-2xs">
-            <div class="w-9 h-9 rounded-full bg-blue-50 text-vectorBlue flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
+        <!-- Número em Destaque com efeito translúcido luminoso -->
+        <div class="mb-7">
+          <a href="tel:+5588999991789" class="inline-flex items-center gap-3 font-poppins text-2xl sm:text-3xl font-extrabold text-white hover:text-cyan-300 transition-all group bg-white/10 hover:bg-white/15 backdrop-blur-md px-6 py-3 rounded-full border border-white/20 shadow-xl shadow-cyan-900/20">
+            <div class="w-9 h-9 rounded-full bg-cyan-400 text-slate-950 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform shadow-md">
               <i data-lucide="phone" class="w-4 h-4"></i>
             </div>
-            <span>(88) 9 9999 1789</span>
+            <span class="tracking-wide">(88) 9 9999 1789</span>
           </a>
         </div>
 
-        <!-- Botões de Ação Simples e Harmoniosos -->
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-3 max-w-sm mx-auto">
+        <!-- Botões de Ação com Estilo Moderno -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3.5 max-w-sm mx-auto">
           <a href="https://wa.me/5588999991789?text=Ol%C3%A1%2C%20Dr.%20Edmar%20Mesquita.%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20atendimento." 
              target="_blank" 
              rel="noopener noreferrer" 
-             class="btn-template w-full sm:flex-1 text-center shadow-md">
+             class="btn-template w-full sm:flex-1 text-center shadow-lg shadow-cyan-500/25">
             <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
             <span>WHATSAPP DIRETO</span>
           </a>
 
           <a href="tel:+5588999991789" 
-             class="font-poppins text-[11px] font-semibold uppercase tracking-wider text-slate-700 hover:text-slate-900 border border-slate-200 hover:border-slate-300 rounded px-5 py-2.5 w-full sm:flex-1 transition-all text-center flex items-center justify-center gap-1.5 bg-white/90 hover:bg-white shadow-2xs">
-            <i data-lucide="phone-call" class="w-3.5 h-3.5 text-slate-500"></i>
+             class="font-poppins text-[11px] font-semibold uppercase tracking-wider text-white hover:text-cyan-200 border border-white/25 hover:border-white/40 rounded px-5 py-2.5 w-full sm:flex-1 transition-all text-center flex items-center justify-center gap-1.5 bg-white/15 hover:bg-white/25 backdrop-blur-md shadow-md">
+            <i data-lucide="phone-call" class="w-3.5 h-3.5 text-cyan-300"></i>
             <span>LIGAR AGORA</span>
           </a>
         </div>
